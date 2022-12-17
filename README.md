@@ -78,7 +78,7 @@ Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Crud/">🔗 aqui</a>
   <ul>
     <li><a href="https://github.com/EdwinCruz13/LandingPage/">Landing Page</a></li>
     <li><a href="https://edwincruz13.github.io/Ucamp-Crud/">CRUD - Lista de tareas usando localstoraged y JS</a></li>
-    <li><a href="https://edwincruz13.github.io/Ucamp-Crud/">Dashboard - Consumiendo una API</a></li>
+    <li><a href="https://github.com/EdwinCruz13/Ucamp-Dashboard/">Dashboard - Consumiendo una API</a></li>
     <li><a href="https://github.com/EdwinCruz13/MERN">MERN</a></li>
     <li><a href="#">Mongo</a></li>
     <li><a href="#">Express</a></li>
