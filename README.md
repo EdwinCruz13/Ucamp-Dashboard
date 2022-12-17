@@ -9,6 +9,8 @@ Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Crud/">🔗 aqui</a>
 <p dir="auto">
     Un dashboard es una herramienta personalizable de visualización de datos, que te ayuda a conectar tus archivos, servicios, API o archivos adjuntos, y muestra estos datos como tablas, tipos de gráficas u otras visualizaciones de datos al espectador y reduce el esfuerzo manual.
     <br><br>
+    <img src="https://github.com/EdwinCruz13/Ucamp-Dashboard/blob/main/resources/dashboard.png?raw=true" />
+    <br><br>
     El seguimiento en tiempo real de este tipo de datos reduce las horas de análisis y las largas líneas de comunicación que antes suponían un reto para las empresas.
     <br><br>
     Los dashboards responden a preguntas importantes sobre tu negocio. A diferencia de las herramientas avanzadas de inteligencia empresarial, los dashboards están diseñados para el análisis rápido y el conocimiento de la información. 
