@@ -1,0 +1,93 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+aside ul,
+aside li {
+    outline:0;
+    margin:0;
+    padding:0;
+    border: none;
+}
+
+
+.fa {
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    font-size:25px;
+}
+
+.main-menu {
+    background:#212121;
+    border-right:1px solid #e5e5e5;
+    position:absolute;
+    top:0;
+    bottom:0;
+    height:100%;
+    left:0;
+    width:270px;
+    overflow:hidden;
+    z-index:1000;
+}
+
+/*.main-menu:hover{
+    width:270px;
+    overflow:visible;
+    transition:all 0.25s linear;
+}*/
+
+.main-menu > ul {
+    margin:15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    gap:16px;
+}
+
+
+.main-menu li > a {
+    position:relative;
+    display:table;
+    
+    border-spacing:0;
+    color:#ccc3c3;
+    font-family: arial;
+    font-size: 15px;
+    text-decoration:none;
+    transition:all 0.15s linear;
+    width:270px;
+}
+
+.main-menu li:hover>a{
+    color:#000;
+    background-color:#fbc02d;
+    transition:all 0.15s linear;
+}
+    
+.main-menu .nav-text {
+    position:relative;
+    display:table-cell;
+    vertical-align:middle;
+
+    width:190px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-menu > ul.logout {
+    position:absolute;
+    left:0;
+    bottom:0;
+}
+
+
+a:hover,a:focus {
+    text-decoration:none;
+}
+
+
+
+
+
