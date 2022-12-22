@@ -48,13 +48,17 @@ main {
 
 /*container*/
 #main-container .container {
-  
-  
   width: 100%;
-  padding: 1rem;
-  
+  padding: 1.8542rem;
   background-color: #fff;
 }
+
+#main-container .container #chart_container {
+    display: block;
+    width: 100%;
+    height: 95%;
+    background-color: #E1F5FE;
+  }
 
 /*panel izquierdo*/
 aside ul,
@@ -91,7 +95,7 @@ aside li {
   box-shadow: inset -0.5px 0px 0px 0px #f3e7e7;
 
   /*una animación para el incremento de tamaño de ancho*/
-  transition: width 0.1s ease-in-out;
+  transition: width 0.5s ease-out;
 }
 
 .main-menu > ul {
@@ -237,10 +241,12 @@ ol {
 .card:hover {
   /*box-shadow: inset 0 -3px 0px 0px #6330bc;*/
   box-shadow: inset 0 -3px 0px 0px #fbc02d;
-  background-color: #9e9d9d49;
+  background-color: #646161;
   cursor: pointer;
   transition: all 0.5s ease;
 }
+
+
 
 .card-details {
   position: relative;
@@ -383,7 +389,7 @@ ol {
 /*para mobile*/
 @media (max-width: 480px) {
   .main-menu {
-    width: 70px;
+    width: 85px;
     transition: width 0.5s ease-out;
   }
   .nav {
