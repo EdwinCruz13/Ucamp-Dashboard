@@ -227,7 +227,7 @@ ul, ol {
     overflow: hidden;
     height: 55px;
     width: 150px;
-    padding: 0 0 0 0.08rem;
+    padding: 0 0 0.08rem;
   
     background-color: #212121;
   }
@@ -258,13 +258,18 @@ ul, ol {
       font-family:'Courier New', Courier, monospace;
       text-align: left;
       color: #fff;
+      
   }
   .card .card-details > h3 {
-      font-size: 14px;   
+      font-size: 14px;  
+      position: relative;
+      top:5px; 
   }
   
   .card .card-details > p {
     font-size: 12px;
+    position: relative;
+    top:-8px;
   }
   
   .card .image {
