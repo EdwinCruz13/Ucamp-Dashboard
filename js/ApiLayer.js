@@ -21,12 +21,17 @@ myHeaders.append("apikey", Key);
 const requestOptions = { method: 'GET', redirect: 'follow', headers: myHeaders};
 
 
+
+
+
+
+
 //function that allow return the convertion according a date
-let GetData = async(base, listed, dayBefore) =>{
+let GetData = async(base, quote, dayBefore) =>{
   let PreviousDate = turnBackTime(dayBefore);
 
   //use fetch command in order to get the information from api
- await fetch(`${URL}start_date=${PreviousDate}&end_date=${CurrentDate}&base=${base}&symbols=${listed}`, requestOptions)
+ await fetch(`${URL}start_date=${PreviousDate}&end_date=${CurrentDate}&base=${base}&symbols=${quote}`, requestOptions)
         .then(response => response.text())
         .then(result => console.log(result))
         .catch(error => console.log('error: >', error));
@@ -49,10 +54,12 @@ let turnBackTime = (dayBefore) =>{
 }
 
 
+export default GetData;
+
 
 
 //get data
-GetData("USD", "JPY", 0);
+//GetData("USD", "JPY", 0);
 
 
 

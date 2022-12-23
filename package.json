@@ -1,0 +1,13 @@
+{
+  "name": "ucamp-dashboard",
+  "version": "1.0.0",
+  "description": "Bienvenido al repositorio de como crear un dashboard consumiendo una API puedes \r <br>\r Ver el sitio <a href=\"https://edwincruz13.github.io/Ucamp-Crud/\">🔗 aqui</a>",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
