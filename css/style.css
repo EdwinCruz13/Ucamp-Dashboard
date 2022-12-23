@@ -179,6 +179,7 @@ ol {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .nav li a i {
