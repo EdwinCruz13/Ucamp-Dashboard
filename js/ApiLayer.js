@@ -54,7 +54,7 @@ let turnBackTime = (dayBefore) =>{
 }
 
 
-export default GetData;
+//export default GetData;
 
 
 
