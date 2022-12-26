@@ -367,6 +367,7 @@ ol {
 @media (min-width: 480px) and (max-width: 767px) {
   .main-menu {
     width: 70px;
+    left: -5px;
     transition: width 0.5s ease-out;
   }
   .nav {
@@ -390,8 +391,10 @@ ol {
 /*para mobile*/
 @media (max-width: 480px) {
   .main-menu {
-    width: 85px;
+    width: 90px;
+    left: -5px;
     transition: width 0.5s ease-out;
+
   }
   .nav {
     display: block;

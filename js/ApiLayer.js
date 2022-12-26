@@ -7,80 +7,66 @@
     symbols: USD or (USD, YPJ, GBT)
 */
 
-const Key = "7JBi26XrxqHscCojd7wA1NQhTYTJsNKN";
-const URL = "https://api.apilayer.com/fixer/timeseries?";
+export default class ApiLayer
+{
+  //declare some variables
+  Key; URL; CurrentDate; requestOptions; myHeaders;
+  CurrentDate; DaysBefore;
+  
+  //instance a new object
+  constructor(base, quote, dayBefore)
+  {
+    //set some variable
+    this.CurrentDate = this.GetCurrentDate();
+    this.DaysBefore = this.GetPreviousDate(dayBefore);
 
-//get the date in properly format yyyy-mm-dd
-const CurrentDate = new Date().getFullYear() + "-" + (new Date().getMonth() + 1 ) + "-" + new Date().getDate();
+    //set apikey and url variable
+    this.Key = "4uOzAAJY4BFWLFIUudTzjYODGJ33yLSG";
+    this.URL = `https://api.apilayer.com/fixer/timeseries?start_date=${this.DaysBefore}&end_date=${this.CurrentDate}&base=${base}&symbols=${quote}`;
+    
 
+  }
 
-//create a request header
-var myHeaders = new Headers();
-myHeaders.append("apikey", Key);
-//create an object that attach the apikey as header
-const requestOptions = { method: 'GET', redirect: 'follow', headers: myHeaders};
+  //consuming a webservice
+  async Retrieve()
+  {
 
+    //set a new header
+    this.myHeaders = new Headers();
+    this.myHeaders.append("apikey", this.Key);
+    this.requestOptions = { method: 'GET', redirect: 'follow', headers: this.myHeaders};
 
+    
+    //using fetch in order to make a request
+    await fetch(this.URL, this.requestOptions)
+          .then(response => response.text())
+          .then(result => console.log(result))
+          .catch(error => console.log('error: >', error));
+  }
 
+  //this method return the current date, using the format yyyy-mm-dd
+  GetCurrentDate()
+  {
+    return new Date().getFullYear() + "-" + (new Date().getMonth() + 1 ) + "-" + new Date().getDate();
+  }
 
+  //this method returns a specific date, using the format yyyy-mm-dd
+  //current date - day bac
+  GetPreviousDate(dayBefore)
+  {
+      //get go to the present because always the time is one day less
+      var date = new Date(this.CurrentDate);
+      date.setDate(date.getDate() + 1);
 
+      //using the setdate in order to turn back time
+      date.setDate(date.getDate() - dayBefore);
 
-
-//function that allow return the convertion according a date
-let GetData = async(base, quote, dayBefore) =>{
-  let PreviousDate = turnBackTime(dayBefore);
-
-  //use fetch command in order to get the information from api
- await fetch(`${URL}start_date=${PreviousDate}&end_date=${CurrentDate}&base=${base}&symbols=${quote}`, requestOptions)
-        .then(response => response.text())
-        .then(result => console.log(result))
-        .catch(error => console.log('error: >', error));
-
+      //return the date in properly format yyyy-mm-dd
+      return date.getFullYear() + "-" + (date.getMonth() + 1 ) + "-" + date.getDate();
+  }
 
 }
 
+/*var api = new ApiLayer("USD", "JPY", 1);
+api.Retrieve();*/
 
-let turnBackTime = (dayBefore) =>{
-  //get go to the present because always the time is one day less
-  var date = new Date(CurrentDate);
-  date.setDate(date.getDate() + 1);
-
-  //using the setdate in order to turn back time
-  date.setDate(date.getDate() - dayBefore);
-
-  //return the date in properly format yyyy-mm-dd
-  return date.getFullYear() + "-" + (date.getMonth() + 1 ) + "-" + date.getDate();
-
-}
-
-
-//export default GetData;
-
-
-
-//get data
-//GetData("USD", "JPY", 0);
-
-
-
-
-
-
-
-
-
-
-/*
-var myHeaders = new Headers();
-myHeaders.append("apikey", "7JBi26XrxqHscCojd7wA1NQhTYTJsNKN");
-
-var requestOptions = {
-  method: 'GET',
-  redirect: 'follow',
-  headers: myHeaders
-};
-
-fetch("https://api.apilayer.com/fixer/timeseries?start_date=2022-12-22&end_date=2022-12-23&base=EUR&symbols=USD", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));*/

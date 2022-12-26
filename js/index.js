@@ -1,5 +1,5 @@
-//import retrieveData from "./ApiLayer.js";
-
+//import { ApiLayer } from './ApiLayer';
+//import ApiLayer from './ApiLayer';
 
 //get the card
 function SelectCurrency(card) 
@@ -18,20 +18,7 @@ function SelectCurrency(card)
     var daysBefore = 2;
 
     console.log(base, quote);
+    //var fd = new ApiLayer(base, quote, 1);
     //var Object = retrieveData(base, quote, daysBefore)
     
 }
-
-
-
-
-/*const cardEURUSD = document.getElementById("EURUSD");
-
-cardEURUSD.addEventListener('click', () => {
-    alert('You clicked the button');
-});*/
-
-//var base = card.getAttribute('data-base'); 
-
-
-
