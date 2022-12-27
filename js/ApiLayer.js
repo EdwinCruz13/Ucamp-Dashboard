@@ -38,10 +38,15 @@ export class ApiLayer
 
     
     //using fetch in order to make a request
-    await fetch(this.URL, this.requestOptions)
-          .then(response => response.text())
-          .then(result => console.log(result))
-          .catch(error => console.log('error: >', error));
+    let response = await fetch(this.URL, this.requestOptions)
+                  .then(response => response.text())
+                  .then((response) => {
+                      //return the answer to object
+                      return JSON.parse(response);
+                  })
+                  .catch(error => console.log('error: >', error));
+
+    return response;
   }
 
   //this method return the current date, using the format yyyy-mm-dd

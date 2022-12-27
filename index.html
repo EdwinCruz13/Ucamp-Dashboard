@@ -8,7 +8,8 @@
 
     <link rel="stylesheet" href="css/style.css">
     <script type="module" src="js/index.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <title>FOREX</title>
 </head>
 
@@ -25,7 +26,7 @@
 
             <div class="menu-items">
                 <div id="section-card">
-                    <div id="EURUSD" class="card" data-base="EUR" data-quote="USD" onclick="SelectCurrency(this)">
+                    <div id="EURUSD" class="card" data-base="EUR" data-quote="USD">
                         <div class="image">
                             <img src="./resources/EURUSD.png" alt="Forex-Market" />
                         </div>
@@ -38,7 +39,7 @@
                         </div>
                     </div>
     
-                    <div id="GBPUSD" class="card" data-base="GBP" data-quote="USD" onclick="SelectCurrency(this)">
+                    <div id="GBPUSD" class="card" data-base="GBP" data-quote="USD">
                         <div class="image">
                             <img src="./resources/GBPUSD.png" alt="Forex-Market" />
                         </div>
@@ -51,7 +52,7 @@
                         </div>
                     </div>
     
-                    <div id="USDJPY" class="card" data-base="USD" data-quote="JPY" onclick="SelectCurrency(this)">
+                    <div id="USDJPY" class="card" data-base="USD" data-quote="JPY">
                         <div class="image">
                             <img src="./resources/USDJPY.png" alt="Forex-Market" />
                         </div>
@@ -64,7 +65,7 @@
                         </div>
                     </div>
     
-                    <div id="USDCAD" class="card" data-base="USD" data-quote="CAD" onclick="SelectCurrency(this)">
+                    <div id="USDCAD" class="card" data-base="USD" data-quote="CAD">
                         <div class="image">
                             <img src="./resources/USDCAD.png" alt="Forex-Market" />
                         </div>
@@ -77,7 +78,7 @@
                         </div>
                     </div>
     
-                    <div id="USDCHF" class="card" data-base="USD" data-quote="CHF" onclick="SelectCurrency(this)">
+                    <div id="USDCHF" class="card" data-base="USD" data-quote="CHF">
                         <div class="image">
                             <img src="./resources/USDCHF.png" alt="Forex-Market" />
                         </div>
@@ -96,19 +97,19 @@
                         <a href="#">Forex <i class="fa fa-angle-down"></i></a>
                         <ul>
                             <li>
-                                <a href="#" data-base="EUR" data-quote="USD" onclick="SelectCurrency(this)"><img src="./resources/EURUSD.png" alt="Forex-EUR" width="35" height="35" />  EUR/USD</a>
+                                <a id="EURUSD_mobil" href="#" data-base="EUR" data-quote="USD"><img src="./resources/EURUSD.png" alt="Forex-EUR" width="35" height="35" />  EUR/USD</a>
                             </li>
                             <li>
-                                <a href="#" data-base="GBP" data-quote="USD" onclick="SelectCurrency(this)"><img src="./resources/GBPUSD.png" alt="Forex-EUR" width="35" height="35" />  GBP/USD</a>
+                                <a id="GBPUSD_mobil" href="#" data-base="GBP" data-quote="USD"><img src="./resources/GBPUSD.png" alt="Forex-EUR" width="35" height="35" />  GBP/USD</a>
                             </li>
                             <li>
-                                <a href="#" data-base="USD" data-quote="JPY" onclick="SelectCurrency(this)"><img src="./resources/USDJPY.png" alt="Forex-JPY" width="35" height="35" />  USD/JPY</a>
+                                <a id="USDJPY_mobil" href="#" data-base="USD" data-quote="JPY"><img src="./resources/USDJPY.png" alt="Forex-JPY" width="35" height="35" />  USD/JPY</a>
                             </li>
                             <li>
-                                <a href="#" data-base="USD" data-quote="CAD" onclick="SelectCurrency(this)"><img src="./resources/USDCAD.png" alt="Forex-CAD" width="35" height="35" />  USD/CAD</a>
+                                <a id="USDCAD_mobil" href="#" data-base="USD" data-quote="CAD"><img src="./resources/USDCAD.png" alt="Forex-CAD" width="35" height="35" />  USD/CAD</a>
                             </li>
                             <li>
-                                <a href="#" data-base="USD" data-quote="CHF" onclick="SelectCurrency(this)"><img src="./resources/USDCHF.png" alt="Forex-CHF" width="35" height="35" />  USD/CHF</a>
+                                <a id="USDCHF_mobil" href="#" data-base="USD" data-quote="CHF"><img src="./resources/USDCHF.png" alt="Forex-CHF" width="35" height="35" />  USD/CHF</a>
                             </li>
                         </ul>
                     </li>
@@ -197,9 +198,7 @@
                </section>
 
                <section id="chart_container">
-                    <div>
-                        fdfd
-                    </div>
+                    <canvas id="myChart"></canvas>
                </section>
             </div>
 

@@ -56,9 +56,10 @@ main {
 #main-container .container #chart_container {
     display: block;
     width: 100%;
+    /*no ponerlo al 90% XD*/
     height: 95%;
-    background-color: #E1F5FE;
-  }
+}
+
 
 /*panel izquierdo*/
 aside ul,
