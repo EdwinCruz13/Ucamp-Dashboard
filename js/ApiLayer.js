@@ -7,7 +7,7 @@
     symbols: USD or (USD, YPJ, GBT)
 */
 
-export default class ApiLayer
+export class ApiLayer
 {
   //declare some variables
   Key; URL; CurrentDate; requestOptions; myHeaders;
@@ -69,4 +69,5 @@ export default class ApiLayer
 
 /*var api = new ApiLayer("USD", "JPY", 1);
 api.Retrieve();*/
+
 

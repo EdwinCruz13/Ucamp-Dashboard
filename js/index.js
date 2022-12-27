@@ -1,5 +1,6 @@
-//import { ApiLayer } from './ApiLayer';
+import { ApiLayer } from './ApiLayer.js';
 //import ApiLayer from './ApiLayer';
+
 
 //get the card
 function SelectCurrency(card) 
@@ -22,3 +23,4 @@ function SelectCurrency(card)
     //var Object = retrieveData(base, quote, daysBefore)
     
 }
+
