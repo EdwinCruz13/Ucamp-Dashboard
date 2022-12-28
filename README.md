@@ -56,7 +56,7 @@ Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Crud/">🔗 aqui</a>
   <br>
 - [x] 🗎  El archivo <b>index.html</b> es el archivo en html5.
   <br><br>
-  <img src="#" />
+  <img src="https://github.com/EdwinCruz13/Ucamp-Dashboard/blob/main/structure/files.png?raw=true" />
             
 </p>
 </details>
