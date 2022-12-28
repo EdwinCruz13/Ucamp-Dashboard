@@ -1,7 +1,7 @@
-# Dashboard - Consumiendo una API
-Bienvenido al repositorio de como crear un dashboard consumiendo una API puedes 
+# Dashboard - Consumiendo una API REST
+Bienvenido al repositorio de como crear un dashboard consumiendo una <a href="https://apilayer.com/">🔗 API REST</a>.
 <br>
-Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Crud/">🔗 aqui</a>
+Puedes Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Crud/">🔗 aqui</a>
 
 <details open="">
   <summary><h2>✨Acerca del Dashboard</h2></summary>
@@ -82,7 +82,7 @@ Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Crud/">🔗 aqui</a>
   <ul>
     <li><a href="https://github.com/EdwinCruz13/LandingPage/">Landing Page</a></li>
     <li><a href="https://github.com/EdwinCruz13/Ucamp-Crud">CRUD - Lista de tareas usando localstoraged y JS</a></li>
-    <li><a href="https://github.com/EdwinCruz13/Ucamp-Dashboard/">Dashboard - Consumiendo una API</a></li>
+    <li><a href="https://github.com/EdwinCruz13/Ucamp-Dashboard/">Dashboard - Consumiendo una API REST</a></li>
     <li><a href="https://github.com/EdwinCruz13/MERN">MERN</a></li>
     <li><a href="#">Mongo</a></li>
     <li><a href="#">Express</a></li>
