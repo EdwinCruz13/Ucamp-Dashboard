@@ -40,11 +40,15 @@ export class chartLayer {
         plugins: {
           title: {
             display: true,
-            text: (ctx) =>
-              "Point Style: " + ctx.chart.data.datasets[0].pointStyle,
+            text: "Exchange rate in the last 7 days"
           },
         },
+       
       },
     });
+
+    // Resizing the chart must be done manually, since OffscreenCanvas does not include event listeners.
+    this.ctx.style.width = "350px"
+    this.ctx.style.height = "250px"
   }
 }

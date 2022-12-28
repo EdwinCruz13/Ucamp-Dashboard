@@ -3,90 +3,150 @@ import { chartLayer } from "./chartLayer.js";
 
 //get the click event using dom
 document.getElementById("EURUSD").addEventListener(
-  "click",
-  function () {
-    SelectCurrency(this);
-  },
-  false
+    "click",
+    function () {
+        BringitOn(this);
+    },
+    false
 );
 
 document.getElementById("GBPUSD").addEventListener(
-  "click",
-  function () {
-    SelectCurrency(this);
-  },
-  false
+    "click",
+    function () {
+        BringitOn(this);
+    },
+    false
 );
 
 document.getElementById("USDJPY").addEventListener(
-  "click",
-  function () {
-    SelectCurrency(this);
-  },
-  false
+    "click",
+    function () {
+        BringitOn(this);
+    },
+    false
 );
 
 document.getElementById("USDCAD").addEventListener(
-  "click",
-  function () {
-    SelectCurrency(this);
-  },
-  false
+    "click",
+    function () {
+        BringitOn(this);
+    },
+    false
 );
 
 document.getElementById("USDCHF").addEventListener(
-  "click",
-  function () {
-    SelectCurrency(this);
-  },
-  false
+    "click",
+    function () {
+        BringitOn(this);
+    },
+    false
 );
 
 document.getElementById("EURUSD_mobil").addEventListener(
-  "click",
-  function () {
-    SelectCurrency(this);
-  },
-  false
+    "click",
+    function () {
+        BringitOn(this);
+    },
+    false
 );
 
 document.getElementById("GBPUSD_mobil").addEventListener(
-  "click",
-  function () {
-    SelectCurrency(this);
-  },
-  false
+    "click",
+    function () {
+        BringitOn(this);
+    },
+    false
 );
 
 document.getElementById("USDJPY_mobil").addEventListener(
-  "click",
-  function () {
-    SelectCurrency(this);
-  },
-  false
+    "click",
+    function () {
+        BringitOn(this);
+    },
+    false
 );
 
 document.getElementById("USDCAD_mobil").addEventListener(
-  "click",
-  function () {
-    SelectCurrency(this);
-  },
-  false
+    "click",
+    function () {
+        BringitOn(this);
+    },
+    false
 );
 
 document.getElementById("USDCHF_mobil").addEventListener(
-  "click",
-  function () {
-    SelectCurrency(this);
-  },
-  false
+    "click",
+    function () {
+        BringitOn(this);
+    },
+    false
 );
 
 //this function gets the base and quote in base on click events
 //after getting the base and quote information through the 'getAttribute' in data-
 //consults to the api rest
-function SelectCurrency(card) {
-  /*const object = {
+function BringitOn(card) {
+
+    //get the base and quote
+    let infoContainer = document.getElementById("mychartInfo");
+    infoContainer.innerHTML = '';
+
+    let base = card.getAttribute("data-base");
+    let quote = card.getAttribute("data-quote");
+
+    //set the image accroding the pair of currency
+    let image = document.getElementById("selected-currency-image");
+    image.src = `resources/${base}${quote}.png`;
+
+    let text = document.getElementById("selected-currency");
+    text.innerHTML = `${base}/${quote}`;
+
+    //get the range of days
+    let api = new ApiLayer(base, quote, 7);
+    let response = api.Retrieve();
+
+    //create the chart by an anwers
+    response.then((res) => {
+        //transform properties into list
+        let labels = [];
+        labels = Object.keys(res.rates); //get the date as labels
+
+        let properties = [];
+        properties = Object.values(res.rates); //get the object inside
+
+        let values = [];
+        properties.forEach((element, index) => {
+            let internValue = Object.values(element);
+            values.push(internValue[0]); //get the value inside
+        });
+
+        //create the chart
+        var chart = new chartLayer(labels, values);
+        labels.forEach((element, index) => {
+            infoContainer.innerHTML += `<span>${element} => ${values[index].toFixed(4)}</span><br>`;
+        });
+    });
+}
+
+/*
+
+    let labels = [];
+    labels = Object.keys(res.rates); //get the date as labels
+
+    let properties = [];
+    properties = Object.values(res.rates); //get the object inside
+
+    let values = [];
+    properties.forEach((element, index) => {
+        let internValue = Object.values(element);
+        values.push(internValue[0]); //get the value inside
+    });
+
+    //create the chart
+    var chart = new chartLayer(labels, values);
+    //fetch the array in order to set the info container
+
+const object = {
         "success": true,
         "timeseries": true,
         "start_date": "2022-12-20",
@@ -119,40 +179,3 @@ function SelectCurrency(card) {
           }
         }
       }*/
-
-  //get the base and quote
-  let base = card.getAttribute("data-base");
-  let quote = card.getAttribute("data-quote");
-
-  let image = document.getElementById("selected-currency-image");
-  image.src = `resources/${base}${quote}.png`;
-
-  let text = document.getElementById("selected-currency");
-  text.innerHTML = `${base}/${quote}`;
-
-  //get the range of days
-  let daysBefore = 2;
-
-  //console.log(base, quote);
-  let api = new ApiLayer(base, quote, 7);
-  let response = api.Retrieve();
-
-  //create the chart by an anwers
-  response.then((res) => {
-    //transform properties into list
-    let labels = [];
-    labels = Object.keys(res.rates); //get the date as labels
-
-    let properties = [];
-    properties = Object.values(res.rates); //get the object inside
-
-    let values = [];
-    properties.forEach((element, index) => {
-      let internValue = Object.values(element);
-      values.push(internValue[0]); //get the value inside
-    });
-
-    //create the chart
-    var chart = new chartLayer(labels, values);
-  });
-}
