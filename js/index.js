@@ -42,6 +42,14 @@ document.getElementById("USDCHF").addEventListener(
     false
 );
 
+document.getElementById("USDMXN").addEventListener(
+    "click",
+    function () {
+        BringitOn(this);
+    },
+    false
+);
+
 document.getElementById("EURUSD_mobil").addEventListener(
     "click",
     function () {
@@ -75,6 +83,14 @@ document.getElementById("USDCAD_mobil").addEventListener(
 );
 
 document.getElementById("USDCHF_mobil").addEventListener(
+    "click",
+    function () {
+        BringitOn(this);
+    },
+    false
+);
+
+document.getElementById("USDMXN_mobil").addEventListener(
     "click",
     function () {
         BringitOn(this);
