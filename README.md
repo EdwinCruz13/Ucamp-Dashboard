@@ -30,11 +30,15 @@ Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Crud/">🔗 aqui</a>
 </details>
 
 
-<details close="">
-  <summary><h2>📁 Diseño del proyecto</h2></summary>
+<details open="">
+  <summary><h2>✨ChartJS</h2></summary>
   <br>
-<p dir="auto"> 
-    <img src="#" />
+<p dir="auto">
+    Chart.js proporciona un conjunto de tipos de gráficos, complementos y opciones de personalización de uso frecuente. Además de un conjunto razonable de tipos de gráficos integrados, puede usar tipos de gráficos adicionales mantenidos por la comunidad. Además de eso, es posible combinar varios tipos de gráficos en un gráfico mixto (básicamente, combinar varios tipos de gráficos en uno en el mismo lienzo).
+    <br><br>
+     <img src="https://github.com/EdwinCruz13/Ucamp-Dashboard/blob/main/structure/chartjs.png?raw=true" />
+    <br><br>
+    Chart.js viene con tipos de TypeScript incorporados y es compatible con todos los marcos de JavaScript populares, incluidos React, Vue, Svelte y Angular. Puede usar Chart.js directamente o aprovechar paquetes de contenedores bien mantenidos que permiten una integración más nativa con los marcos de su elección.
 </p>
 </details>
 
@@ -63,8 +67,8 @@ Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Crud/">🔗 aqui</a>
   Ver el proyecto <a href="#">🔗 aqui</a>
   <br>
   <ul>
-    <li><a href="#">1 - Versión desktop.</a></li>
-    <li><a href="#">2 - Versión mobile.</a></li>
+    <li><a href="https://github.com/EdwinCruz13/Ucamp-Dashboard/blob/main/structure/desktop.png?raw=true">1 - Versión desktop.</a></li>
+    <li><a href="https://github.com/EdwinCruz13/Ucamp-Dashboard/blob/main/structure/mobil1.png?raw=true"> 2 - Versión mobile.</a></li>
   </ul>        
 </p>
 </details>
