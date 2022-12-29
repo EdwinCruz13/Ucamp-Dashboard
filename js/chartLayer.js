@@ -37,18 +37,29 @@ export class chartLayer {
         ],
       },
       options: {
+        responsive: true,
+        scales: {
+          y: {
+            stacked: true,
+            grid: {
+              display: true,
+              color: "rgba(255,99,132,0.2)"
+            }
+          },
+          x: {
+            grid: {
+              display: false
+            }
+          }
+        },
         plugins: {
           title: {
             display: true,
-            text: "Exchange rate in the last 7 days"
+            text: "Exchange rate in the last 15 days"
           },
         },
        
       },
     });
-
-    // Resizing the chart must be done manually, since OffscreenCanvas does not include event listeners.
-    this.ctx.style.width = "350px"
-    this.ctx.style.height = "250px"
   }
 }

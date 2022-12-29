@@ -43,6 +43,22 @@ Puedes Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Dashboard/">�
 </details>
 
 <details open="">
+  <summary><h2>✨Api Fixer - Para tasas de cambios</h2></summary>
+  <br>
+<p dir="auto">
+    Fixer es una API simple y ligera para tasas de cambio de divisas (forex) actuales e históricas.
+    <br><br>
+    Impulsada por más de 15 fuentes de datos de tipos de cambio, la 'API Fixer' es capaz de proporcionar datos de tipos de cambio en tiempo real para 170 monedas del mundo. La API viene con múltiples puntos finales, cada uno de los cuales sirve a un caso de uso diferente.
+    <br><br>
+     <img src="https://github.com/EdwinCruz13/Ucamp-Dashboard/blob/main/structure/apilayer.png?raw=true" />
+    <br><br>
+    Las funcionalidades de los terminales incluyen obtener los datos de tipos de cambio más recientes para todas las monedas o un conjunto específico de ellas, convertir montos de una moneda a otra, recuperar datos de series temporales para una o varias monedas y consultar la API para obtener datos de fluctuación diaria.
+    <br><br>
+    <a href="https://fixer.io/">Ten una licencia gratis.</a>
+</p>
+</details>
+
+<details open="">
   <summary><h2>🚀 Estructura del proyecto</h2></summary>
 <p dir="auto"> 
 

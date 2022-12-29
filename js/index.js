@@ -118,29 +118,43 @@ function BringitOn(card) {
     text.innerHTML = `${base}/${quote}`;
 
     //get the range of days
-    let api = new ApiLayer(base, quote, 7);
+    let api = new ApiLayer(base, quote, 15);
     let response = api.Retrieve();
+
 
     //create the chart by an anwers
     response.then((res) => {
-        //transform properties into list
-        let labels = [];
-        labels = Object.keys(res.rates); //get the date as labels
+       
+        if (res != null || res!=undefined) {
+            
 
-        let properties = [];
-        properties = Object.values(res.rates); //get the object inside
+            //transform properties into list
+            let labels = [];
+            labels = Object.keys(res.rates); //get the date as labels
 
-        let values = [];
-        properties.forEach((element, index) => {
-            let internValue = Object.values(element);
-            values.push(internValue[0]); //get the value inside
-        });
+            let properties = [];
+            properties = Object.values(res.rates); //get the object inside
 
-        //create the chart
-        var chart = new chartLayer(labels, values);
-        labels.forEach((element, index) => {
-            infoContainer.innerHTML += `<span>${element} => ${values[index].toFixed(4)}</span><br>`;
-        });
+            let values = [];
+            properties.forEach((element, index) => {
+                let internValue = Object.values(element);
+                values.push(internValue[0]); //get the value inside
+            });
+
+            //create the chart
+            var chart = new chartLayer(labels, values);
+            labels.forEach((element, index) => {
+                infoContainer.innerHTML += `<span>${element} => ${values[index].toFixed(4)}</span><br>`;
+            });
+
+        }
+        else{
+            console.log(res);
+            let ctx = document.getElementById("errorChart");
+            ctx.innerHTML = `${res.message}`;
+            infoContainer.innerHTML += `<span>Error en la respuesta del webservice, la versión gratuita es de 100 solicitudes</span><br>`;
+        }
+            
     });
 }
 

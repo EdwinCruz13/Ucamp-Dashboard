@@ -12,6 +12,7 @@ export class ApiLayer
   //declare some variables
   Key; URL; CurrentDate; requestOptions; myHeaders;
   CurrentDate; DaysBefore;
+  ctx;
   
   //instance a new object
   constructor(base, quote, dayBefore)
@@ -21,7 +22,7 @@ export class ApiLayer
     this.DaysBefore = this.GetPreviousDate(dayBefore);
 
     //set apikey and url variable
-    this.Key = "4uOzAAJY4BFWLFIUudTzjYODGJ33yLSG";
+    this.Key = "No0XBA3xseNqSElUygusBFBD6oz7DtTQ";
     this.URL = `https://api.apilayer.com/fixer/timeseries?start_date=${this.DaysBefore}&end_date=${this.CurrentDate}&base=${base}&symbols=${quote}`;
     
 
