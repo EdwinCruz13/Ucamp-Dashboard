@@ -3,7 +3,7 @@ Bienvenido al repositorio de como crear un dashboard consumiendo una <a href="ht
 <br>
 Puedes Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Dashboard/">ðŸ”— aqui</a>
 
-<details open="">
+<details close="">
   <summary><h2>âœ¨Acerca del Dashboard</h2></summary>
   <br>
 <p dir="auto">
@@ -17,7 +17,7 @@ Puedes Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Dashboard/">ðŸ”
 </p>
 </details>
 
-<details open="">
+<details close="">
   <summary><h2>âœ¨Acerca del Forex</h2></summary>
   <br>
 <p dir="auto">
@@ -30,7 +30,7 @@ Puedes Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Dashboard/">ðŸ”
 </details>
 
 
-<details open="">
+<details close="">
   <summary><h2>âœ¨ChartJS</h2></summary>
   <br>
 <p dir="auto">
@@ -42,7 +42,7 @@ Puedes Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Dashboard/">ðŸ”
 </p>
 </details>
 
-<details open="">
+<details close="">
   <summary><h2>âœ¨Api Fixer - Para tasas de cambios</h2></summary>
   <br>
 <p dir="auto">
