@@ -121,7 +121,7 @@ function BringitOn(card) {
     let api = new ApiLayer(base, quote, 15);
     let response = api.Retrieve();
 
-
+    //console.log(response);
     //create the chart by an anwers
     response.then((res) => {
        
