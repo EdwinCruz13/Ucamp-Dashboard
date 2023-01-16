@@ -1,7 +1,7 @@
 # Dashboard - Consumiendo una API REST
 Bienvenido al repositorio de como crear un dashboard consumiendo una <a href="https://apilayer.com/">🔗 API REST</a>.
 <br>
-Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Dashboard/" onclick="return ! window.open(this.href);">🔗 aqui</a>
+Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Dashboard/" target="_blank" rel="noopener">🔗 aqui</a>
 
 <details close="">
   <summary><h2>✨Acerca del Dashboard</h2></summary>
