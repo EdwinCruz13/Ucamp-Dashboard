@@ -1,7 +1,7 @@
 # Dashboard - Consumiendo una API
 Bienvenido al repositorio de como crear un dashboard consumiendo una API puedes 
 <br>
-Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Crud/">🔗 aqui</a>
+Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Crud/" target="_blank">🔗 aqui</a>
 
 <details open="">
   <summary><h2>✨Acerca del Dashboard</h2></summary>
