@@ -90,6 +90,19 @@
                             </p>
                         </div>
                     </div>
+
+                    <div id="USDMXN" class="card" data-base="USD" data-quote="MXN">
+                        <div class="image">
+                            <img src="./resources/USDMXN.png" alt="Forex-Market" />
+                        </div>
+    
+                        <div class="card-details">
+                            <h3>USD/MXN</h3>
+                            <p>
+                                Forex
+                            </p>
+                        </div>
+                    </div>
                 </div>
     
                 <ul class="nav">
@@ -110,6 +123,10 @@
                             </li>
                             <li>
                                 <a id="USDCHF_mobil" href="#" data-base="USD" data-quote="CHF"><img src="./resources/USDCHF.png" alt="Forex-CHF" width="35" height="35" />  USD/CHF</a>
+                            </li>
+
+                            <li>
+                                <a id="USDMXN_mobil" href="#" data-base="USD" data-quote="MXN"><img src="./resources/USDMXN.png" alt="Forex-MXN" width="35" height="35" />  USD/MXN</a>
                             </li>
                         </ul>
                     </li>
@@ -198,7 +215,9 @@
                </section>
 
                <section id="chart_container">
+                    <div id="errorChart"></div>
                     <canvas id="myChart"></canvas>
+                    <article id="mychartInfo"></article>
                </section>
             </div>
 

@@ -1,9 +1,9 @@
-# Dashboard - Consumiendo una API
-Bienvenido al repositorio de como crear un dashboard consumiendo una API puedes 
+# Dashboard - Consumiendo una API REST
+Bienvenido al repositorio de como crear un dashboard consumiendo una <a href="https://apilayer.com/">🔗 API REST</a>.
 <br>
 Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Crud/" target="_blank">🔗 aqui</a>
 
-<details open="">
+<details close="">
   <summary><h2>✨Acerca del Dashboard</h2></summary>
   <br>
 <p dir="auto">
@@ -17,7 +17,7 @@ Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Crud/" target="_blank"
 </p>
 </details>
 
-<details open="">
+<details close="">
   <summary><h2>✨Acerca del Forex</h2></summary>
   <br>
 <p dir="auto">
@@ -31,10 +31,30 @@ Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Crud/" target="_blank"
 
 
 <details close="">
-  <summary><h2>📁 Diseño del proyecto</h2></summary>
+  <summary><h2>✨ChartJS</h2></summary>
   <br>
-<p dir="auto"> 
-    <img src="#" />
+<p dir="auto">
+    Chart.js proporciona un conjunto de tipos de gráficos, complementos y opciones de personalización de uso frecuente. Además de un conjunto razonable de tipos de gráficos integrados, puede usar tipos de gráficos adicionales mantenidos por la comunidad. Además de eso, es posible combinar varios tipos de gráficos en un gráfico mixto (básicamente, combinar varios tipos de gráficos en uno en el mismo lienzo).
+    <br><br>
+     <img src="https://github.com/EdwinCruz13/Ucamp-Dashboard/blob/main/structure/chartjs.png?raw=true" />
+    <br><br>
+    Chart.js viene con tipos de TypeScript incorporados y es compatible con todos los marcos de JavaScript populares, incluidos React, Vue, Svelte y Angular. Puede usar Chart.js directamente o aprovechar paquetes de contenedores bien mantenidos que permiten una integración más nativa con los marcos de su elección.
+</p>
+</details>
+
+<details close="">
+  <summary><h2>✨Api Fixer - Para tasas de cambios</h2></summary>
+  <br>
+<p dir="auto">
+    Fixer es una API simple y ligera para tasas de cambio de divisas (forex) actuales e históricas.
+    <br><br>
+    Impulsada por más de 15 fuentes de datos de tipos de cambio, la 'API Fixer' es capaz de proporcionar datos de tipos de cambio en tiempo real para 170 monedas del mundo. La API viene con múltiples puntos finales, cada uno de los cuales sirve a un caso de uso diferente.
+    <br><br>
+     <img src="https://github.com/EdwinCruz13/Ucamp-Dashboard/blob/main/structure/apilayer.png?raw=true" />
+    <br><br>
+    Las funcionalidades de los terminales incluyen obtener los datos de tipos de cambio más recientes para todas las monedas o un conjunto específico de ellas, convertir montos de una moneda a otra, recuperar datos de series temporales para una o varias monedas y consultar la API para obtener datos de fluctuación diaria.
+    <br><br>
+    <a href="https://fixer.io/">Ten una licencia gratis.</a>
 </p>
 </details>
 
@@ -52,7 +72,7 @@ Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Crud/" target="_blank"
   <br>
 - [x] 🗎  El archivo <b>index.html</b> es el archivo en html5.
   <br><br>
-  <img src="#" />
+  <img src="https://github.com/EdwinCruz13/Ucamp-Dashboard/blob/main/structure/files.png?raw=true" />
             
 </p>
 </details>
@@ -60,11 +80,11 @@ Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Crud/" target="_blank"
 <details open="">
   <summary><h2>💡 Resultado</h2></summary>
 <p dir="auto"> 
-  Ver el proyecto <a href="#">🔗 aqui</a>
+  Ver el proyecto <a href="https://edwincruz13.github.io/Ucamp-Dashboard/">🔗 aqui</a>
   <br>
   <ul>
-    <li><a href="#">1 - Versión desktop.</a></li>
-    <li><a href="#">2 - Versión mobile.</a></li>
+    <li><a href="https://github.com/EdwinCruz13/Ucamp-Dashboard/blob/main/structure/desktop.png?raw=true">1 - Versión desktop.</a></li>
+    <li><a href="https://github.com/EdwinCruz13/Ucamp-Dashboard/blob/main/structure/mobil1.png?raw=true"> 2 - Versión mobile.</a></li>
   </ul>        
 </p>
 </details>
@@ -78,7 +98,7 @@ Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Crud/" target="_blank"
   <ul>
     <li><a href="https://github.com/EdwinCruz13/LandingPage/">Landing Page</a></li>
     <li><a href="https://github.com/EdwinCruz13/Ucamp-Crud">CRUD - Lista de tareas usando localstoraged y JS</a></li>
-    <li><a href="https://github.com/EdwinCruz13/Ucamp-Dashboard/">Dashboard - Consumiendo una API</a></li>
+    <li><a href="https://github.com/EdwinCruz13/Ucamp-Dashboard/">Dashboard - Consumiendo una API REST</a></li>
     <li><a href="https://github.com/EdwinCruz13/MERN">MERN</a></li>
     <li><a href="#">Mongo</a></li>
     <li><a href="#">Express</a></li>

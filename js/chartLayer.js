@@ -37,13 +37,28 @@ export class chartLayer {
         ],
       },
       options: {
+        responsive: true,
+        scales: {
+          y: {
+            stacked: true,
+            grid: {
+              display: true,
+              color: "rgba(255,99,132,0.2)"
+            }
+          },
+          x: {
+            grid: {
+              display: false
+            }
+          }
+        },
         plugins: {
           title: {
             display: true,
-            text: (ctx) =>
-              "Point Style: " + ctx.chart.data.datasets[0].pointStyle,
+            text: "Exchange rate in the last 15 days"
           },
         },
+       
       },
     });
   }
