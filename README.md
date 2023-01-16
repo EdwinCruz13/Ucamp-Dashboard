@@ -1,7 +1,7 @@
 # Dashboard - Consumiendo una API REST
 Bienvenido al repositorio de como crear un dashboard consumiendo una <a href="https://apilayer.com/">🔗 API REST</a>.
 <br>
-Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Crud/" target="_blank">🔗 aqui</a>
+Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Dashboard/" target="_blank">🔗 aqui</a>
 
 <details close="">
   <summary><h2>✨Acerca del Dashboard</h2></summary>
@@ -80,11 +80,11 @@ Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Crud/" target="_blank"
 <details open="">
   <summary><h2>💡 Resultado</h2></summary>
 <p dir="auto"> 
-  Ver el proyecto <a href="https://edwincruz13.github.io/Ucamp-Dashboard/">🔗 aqui</a>
+  Ver el proyecto <a href="https://edwincruz13.github.io/Ucamp-Dashboard/" target="_blank">🔗 aqui</a>
   <br>
   <ul>
-    <li><a href="https://github.com/EdwinCruz13/Ucamp-Dashboard/blob/main/structure/desktop.png?raw=true">1 - Versión desktop.</a></li>
-    <li><a href="https://github.com/EdwinCruz13/Ucamp-Dashboard/blob/main/structure/mobil1.png?raw=true"> 2 - Versión mobile.</a></li>
+    <li><a href="https://github.com/EdwinCruz13/Ucamp-Dashboard/blob/main/structure/desktop.png?raw=true" target="_blank">1 - Versión desktop.</a></li>
+    <li><a href="https://github.com/EdwinCruz13/Ucamp-Dashboard/blob/main/structure/mobil1.png?raw=true" target="_blank"> 2 - Versión mobile.</a></li>
   </ul>        
 </p>
 </details>
@@ -96,14 +96,14 @@ Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Crud/" target="_blank"
   This repository is one of some season of courses I am doing, feel as your home reading it, we will learn together, it is ok if you have any question, and do not forget giving me some feedback.
   </br>
   <ul>
-    <li><a href="https://github.com/EdwinCruz13/LandingPage/">Landing Page</a></li>
-    <li><a href="https://github.com/EdwinCruz13/Ucamp-Crud">CRUD - Lista de tareas usando localstoraged y JS</a></li>
-    <li><a href="https://github.com/EdwinCruz13/Ucamp-Dashboard/">Dashboard - Consumiendo una API REST</a></li>
-    <li><a href="https://github.com/EdwinCruz13/MERN">MERN</a></li>
-    <li><a href="#">Mongo</a></li>
-    <li><a href="#">Express</a></li>
-    <li><a href="#">React</a></li>
-    <li><a href="https://github.com/EdwinCruz13/NodeJS-Lesson">NodeJS</a></li>
+    <li><a href="https://github.com/EdwinCruz13/LandingPage/" target="_blank">Landing Page</a></li>
+    <li><a href="https://github.com/EdwinCruz13/Ucamp-Crud" target="_blank">CRUD - Lista de tareas usando localstoraged y JS</a></li>
+    <li><a href="https://github.com/EdwinCruz13/Ucamp-Dashboard/" target="_blank">Dashboard - Consumiendo una API REST</a></li>
+    <li><a href="https://github.com/EdwinCruz13/MERN" target="_blank">MERN</a></li>
+    <li><a href="#" target="_blank">Mongo</a></li>
+    <li><a href="#" target="_blank">Express</a></li>
+    <li><a href="#" target="_blank">React</a></li>
+    <li><a href="https://github.com/EdwinCruz13/NodeJS-Lesson" target="_blank">NodeJS</a></li>
   </ul>
 
 </p>
